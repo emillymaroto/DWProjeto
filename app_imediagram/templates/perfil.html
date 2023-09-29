@@ -1,0 +1,19 @@
+{% extends 'homepage.html' %}
+
+{% block titulo %}
+    {{ usuario }}
+{% endblock %}
+
+{% block body %}
+
+    <h1 style="color: #ff0000">Rota perfil</h1>
+    <p>Este conteúdo está em templates/perfil.html</p>
+    <p>Carregado via main.py, usando o decorator @app.route('/perfil')</p>
+
+    <br>
+    <a href = "/">Home</a>
+
+    <br>
+    <a href = {{ url_for( 'homepage' ) }}>Home com url_for()</a>
+
+{% endblock %}
