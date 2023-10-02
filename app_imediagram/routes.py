@@ -3,8 +3,6 @@ from app_imediagram import app, bcrypt, database
 from app_imediagram.forms import FormLogin, FormCriarConta, FormFoto
 from flask_login import login_required, login_user, logout_user, current_user
 from app_imediagram.models import Usuario, Foto
-import os
-
 
 @app.route('/', methods = [ "GET", "POST" ] )
 def homepage():
